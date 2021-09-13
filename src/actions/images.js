@@ -11,8 +11,6 @@ export const startRandomImage = () => {
 
         const {fileSizeBytes,url} = data
 
-        console.log(fileSizeBytes,url)
-
         dispatch(saveImage(fileSizeBytes,url))
     }
 }
@@ -23,4 +21,8 @@ export const saveImage = (fileSize,url) => ({
         fileSizeBytes:fileSize,
         url:url
     }
+})
+
+export const deleteSavedImage = () => ({
+    type:types.deleteSavedImage,
 })

@@ -13,6 +13,8 @@ export const imagesReducer = (state = initialState, action) => {
             fileSizeBytes:action.payload.fileSizeBytes,
             url:action.payload.url
         }
+    case types.deleteSavedImage:
+      return{}
     default:
       return state;
   }
