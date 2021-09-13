@@ -1,0 +1,33 @@
+.home__main-container{
+    background-color: $dark-blue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__image{
+    max-height: 375px;
+    max-width: 350px;
+    margin: 20px 0;
+}
+
+.home__title{
+    color:$light;
+    text-align: center;
+}
+
+.home__warning{
+    padding: 20px;
+    text-align: center;
+    color:darken($color: $light, $amount: 10)
+}
+
+.home__img-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.home__filesize{
+    color: $light;
+}

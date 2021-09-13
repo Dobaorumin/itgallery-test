@@ -1,0 +1,37 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 7px 10px 7px 10px;
+    
+    transition: color .3s ease;
+
+    &:focus{
+        outline: none;
+    }
+   
+    &:hover{
+        color: darken($color: white, $amount: 20);
+    }
+}
+
+.btn-primary{
+    background-color: $light-turquoise;
+    border-radius: 2px;
+    width: 100%;
+
+    &:disabled{
+        background-color: lighten($color: $light-turquoise, $amount: 20);
+    }
+
+
+}
+
+.btn-warning{
+    margin-top: 10px;
+    background-color: darken($color: $warning, $amount: 40);
+    border-radius: 2px;
+}
+
